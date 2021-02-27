@@ -30,7 +30,7 @@ class TestLogin(object):
         print(msg)
         try:
             # 断言
-            assert "itheima_test" == msg
+            assert  msg == "itheima_test"
         except AssertionError:
             # 截图
             self.pagelogin.base_screensh_image()
@@ -41,7 +41,7 @@ class TestLogin(object):
         try:
             msg1 = self.pagelogin.page_get_my()
             print(msg1)
-            assert "我" == msg1
+            assert msg1 == "我"
         except AssertionError:
             # 截图
             self.pagelogin.base_screensh_image()

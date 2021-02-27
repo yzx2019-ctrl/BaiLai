@@ -33,7 +33,7 @@ class PageLogin(Base):
 
     # 获取用户名
     def page_get_username(self):
-        self.base_get_element_info(page.login_get_username)
+        return self.base_get_element_info(page.login_get_username)
 
 
     # 点击设置按钮
@@ -53,7 +53,7 @@ class PageLogin(Base):
 
     # 获取我
     def page_get_my(self):
-        self.base_get_element_info(page.login_click_my)
+        return self.base_get_element_info(page.login_click_my)
 
     # 组合登录操作
     def page_login(self, username, password):
